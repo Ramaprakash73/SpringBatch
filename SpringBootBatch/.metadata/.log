@@ -1,0 +1,1586 @@
+!SESSION 2022-05-19 16:58:43.264 -----------------------------------------------
+eclipse.buildId=4.13.0.I20190916-1045
+java.version=1.8.0_271
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.datatools.connectivity.apache.derby 4 0 2022-05-19 16:58:49.410
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.connectivity.apache.derby [130]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.dbdefinition
+    -> Bundle-SymbolicName: org.eclipse.datatools.modelbase.dbdefinition; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.modelbase.dbdefinition [214]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.connectivity.apache.derby.ui 4 0 2022-05-19 16:58:49.421
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.connectivity.apache.derby.ui [132]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core [147]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.server.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.server.ui; bundle-version="1.3.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.server.ui [149]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql.edit
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core.ui [148]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.connectivity.db.generic.ui 4 0 2022-05-19 16:58:49.424
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.connectivity.db.generic.ui [135]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.connectivity.oda.design.ui 4 0 2022-05-19 16:58:49.427
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.connectivity.oda.design.ui [142]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.connectivity.oda.flatfile.ui 4 0 2022-05-19 16:58:49.429
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.connectivity.oda.flatfile.ui [144]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.oda.design.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.oda.design.ui; bundle-version="3.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.oda.design.ui [142]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.ui [150]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+                  -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.connectivity.sqm.core [147]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.connectivity.sqm.core 4 0 2022-05-19 16:58:49.431
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.connectivity.sqm.core [147]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.connectivity.sqm.core.ui 4 0 2022-05-19 16:58:49.442
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.connectivity.sqm.core.ui [148]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.connectivity.sqm.server.ui 4 0 2022-05-19 16:58:49.446
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.connectivity.sqm.server.ui [149]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql.edit
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.connectivity.ui 4 0 2022-05-19 16:58:49.452
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.connectivity.ui [150]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core [147]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.connectivity.ui.dse 4 0 2022-05-19 16:58:49.453
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.connectivity.ui.dse [151]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.hsqldb 4 0 2022-05-19 16:58:49.462
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.hsqldb [156]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core [147]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.hsqldb.ui 4 0 2022-05-19 16:58:49.468
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.hsqldb.ui [158]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.hsqldb
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.hsqldb; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.hsqldb [156]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core.ui [148]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.server.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.server.ui; bundle-version="1.3.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.server.ui [149]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql.edit
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.db.generic.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.db.generic.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.db.generic.ui [135]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.ibm 4 0 2022-05-19 16:58:49.473
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.ibm [159]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core [147]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.ibm.db2 4 0 2022-05-19 16:58:49.485
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.ibm.db2 [160]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core [147]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.ibm
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.ibm; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.ibm [159]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.ibm.db2.iseries 4 0 2022-05-19 16:58:49.487
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.ibm.db2.iseries [161]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core [147]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.ibm.db2.iseries.ui 4 0 2022-05-19 16:58:49.492
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.ibm.db2.iseries.ui [163]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.ibm.db2.iseries
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.ibm.db2.iseries; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.ibm.db2.iseries [161]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.ibm.db2.luw 4 0 2022-05-19 16:58:49.494
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.ibm.db2.luw [164]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.dbdefinition
+    -> Bundle-SymbolicName: org.eclipse.datatools.modelbase.dbdefinition; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.modelbase.dbdefinition [214]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core [147]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.ibm.db2
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.ibm.db2; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.ibm.db2 [160]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.ibm
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.ibm; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.ibm [159]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.ibm.db2.luw.ui 4 0 2022-05-19 16:58:49.512
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.ibm.db2.luw.ui [166]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.ibm.db2.luw
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.ibm.db2.luw; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.ibm.db2.luw [164]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.ibm.db2.zseries 4 0 2022-05-19 16:58:49.514
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.ibm.db2.zseries [167]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core [147]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.ibm.db2.zseries.ui 4 0 2022-05-19 16:58:49.519
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.ibm.db2.zseries.ui [169]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.ibm.db2.zseries
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.ibm.db2.zseries; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.ibm.db2.zseries [167]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.ibm.informix 4 0 2022-05-19 16:58:49.534
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.ibm.informix [170]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core [147]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.ibm.informix.ui 4 0 2022-05-19 16:58:49.536
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.ibm.informix.ui [172]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.ibm.informix
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.ibm.informix; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.ibm.informix [170]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.ingres 4 0 2022-05-19 16:58:49.547
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.ingres [174]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core [147]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.ingres.ui 4 0 2022-05-19 16:58:49.553
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.ingres.ui [176]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.db.generic.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.db.generic.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.db.generic.ui [135]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.ui [150]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+                  -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.connectivity.sqm.core [147]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.jdt.classpath 4 0 2022-05-19 16:58:49.562
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.jdt.classpath [177]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.mysql 4 0 2022-05-19 16:58:49.606
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.mysql [181]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.dbdefinition
+    -> Bundle-SymbolicName: org.eclipse.datatools.modelbase.dbdefinition; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.modelbase.dbdefinition [214]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.mysql.ui 4 0 2022-05-19 16:58:49.611
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.mysql.ui [183]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.mysql
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.mysql; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.mysql [181]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.dbdefinition
+           -> Bundle-SymbolicName: org.eclipse.datatools.modelbase.dbdefinition; bundle-version="1.2.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.modelbase.dbdefinition [214]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.oda.ws.ui 4 0 2022-05-19 16:58:49.613
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.oda.ws.ui [185]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.oda.design.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.oda.design.ui; bundle-version="3.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.oda.design.ui [142]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.ui [150]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+                  -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.connectivity.sqm.core [147]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.oda.xml.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.oda.xml.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.oda.xml.ui [187]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.oda.design.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.oda.design.ui; bundle-version="3.4.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.oda.xml.ui 4 0 2022-05-19 16:58:49.628
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.oda.xml.ui [187]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.oda.design.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.oda.design.ui; bundle-version="3.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.oda.design.ui [142]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.ui [150]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+                  -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.connectivity.sqm.core [147]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.oracle.ui 4 0 2022-05-19 16:58:49.639
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.oracle.ui [190]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.postgresql 4 0 2022-05-19 16:58:49.641
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.postgresql [191]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core [147]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.postgresql.ui 4 0 2022-05-19 16:58:49.642
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.postgresql.ui [193]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.db.generic.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.db.generic.ui; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.db.generic.ui [135]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.sap.maxdb 4 0 2022-05-19 16:58:49.652
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.sap.maxdb [194]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.sap.maxdb.ui 4 0 2022-05-19 16:58:49.654
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.sap.maxdb.ui [196]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.sap.maxdb
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.sap.maxdb; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.sap.maxdb [194]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.sybase 4 0 2022-05-19 16:58:49.668
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.sybase [200]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core [147]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.sybase.asa 4 0 2022-05-19 16:58:49.671
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.sybase.asa [201]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.dbdefinition
+    -> Bundle-SymbolicName: org.eclipse.datatools.modelbase.dbdefinition; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.modelbase.dbdefinition [214]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core [147]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.sybase.asa.models
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.sybase.asa.models; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.sybase.asa.models [203]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.sybase
+           -> Bundle-SymbolicName: org.eclipse.datatools.enablement.sybase; bundle-version="1.2.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.enablement.sybase [200]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.sybase
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.sybase; bundle-version="1.2.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.sybase.asa.models 4 0 2022-05-19 16:58:49.686
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.sybase.asa.models [203]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.sybase
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.sybase; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.sybase [200]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.sybase.asa.schemaobjecteditor.examples 4 0 2022-05-19 16:58:49.688
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.sybase.asa.schemaobjecteditor.examples [204]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.sybase
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.sybase; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.sybase [200]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.sybase.asa
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.sybase.asa; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.sybase.asa [201]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core.ui [148]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.sybase.asa.models
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.sybase.asa.models; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.sybase.asa.models [203]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.sybase
+           -> Bundle-SymbolicName: org.eclipse.datatools.enablement.sybase; bundle-version="1.2.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.sybase.asa.ui 4 0 2022-05-19 16:58:49.694
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.sybase.asa.ui [205]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.sybase.asa.models
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.sybase.asa.models; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.sybase.asa.models [203]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.sybase
+           -> Bundle-SymbolicName: org.eclipse.datatools.enablement.sybase; bundle-version="1.2.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.enablement.sybase [200]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.connectivity.sqm.core [147]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core.ui [148]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.sybase
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.sybase; bundle-version="1.2.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.sybase.ase 4 0 2022-05-19 16:58:49.701
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.sybase.ase [206]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql; visibility:="reexport"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.dbdefinition
+    -> Bundle-SymbolicName: org.eclipse.datatools.modelbase.dbdefinition; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.modelbase.dbdefinition [214]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.sybase.ase.models 4 0 2022-05-19 16:58:49.709
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.sybase.ase.models [208]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.sybase
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.sybase; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.sybase [200]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.sybase.ase.ui 4 0 2022-05-19 16:58:49.723
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.sybase.ase.ui [209]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.sybase.models 4 0 2022-05-19 16:58:49.730
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.sybase.models [210]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.enablement.sybase.ui 4 0 2022-05-19 16:58:49.738
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.enablement.sybase.ui [211]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.sybase
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.sybase; bundle-version="1.2.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.enablement.sybase [200]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.core.ui [148]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.server.ui
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.server.ui; bundle-version="1.3.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.sqm.server.ui [149]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql.edit
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.modelbase.dbdefinition 4 0 2022-05-19 16:58:49.747
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.modelbase.dbdefinition [214]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.modelbase.derby 4 0 2022-05-19 16:58:49.752
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.modelbase.derby [215]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.datatools.sqltools.sqlscrapbook 4 0 2022-05-19 16:58:49.765
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.datatools.sqltools.sqlscrapbook [253]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.sqleditor
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jpt.jpa.annotate 4 0 2022-05-19 16:58:53.789
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.annotate [451]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.core
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.core; bundle-version="3.5.1.v201902121834"; singleton:="true"
+       org.eclipse.jpt.jpa.core [453]
+         Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.201.v201902121834"; singleton:="true"
+              org.eclipse.jpt.jpa.db [454]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core; bundle-version="[1.0.0,3.0.0)"
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="[1.0.1,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="1.2.101.201807030125"; singleton:="true"
+                     org.eclipse.datatools.enablement.jdt.classpath [177]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+                         -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+                            org.eclipse.datatools.connectivity.ui [150]
+                              Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+                              Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+                                -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+                                   org.eclipse.datatools.connectivity.sqm.core [147]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.201.v201902121834"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2022-05-19 16:58:53.810
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.core [453]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.201.v201902121834"; singleton:="true"
+       org.eclipse.jpt.jpa.db [454]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core; bundle-version="[1.0.0,3.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="[1.0.1,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="1.2.101.201807030125"; singleton:="true"
+              org.eclipse.datatools.enablement.jdt.classpath [177]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+                  -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.connectivity.ui [150]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+                         -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+                            org.eclipse.datatools.connectivity.sqm.core [147]
+                              Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jpt.jpa.db 4 0 2022-05-19 16:58:53.811
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.db [454]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core; bundle-version="[1.0.0,3.0.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="[1.0.1,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="1.2.101.201807030125"; singleton:="true"
+       org.eclipse.datatools.enablement.jdt.classpath [177]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.ui [150]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+                  -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.connectivity.sqm.core [147]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jpt.jpa.db.ui 4 0 2022-05-19 16:58:53.829
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.db.ui [455]
+  Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui; bundle-version="[1.1.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+       org.eclipse.datatools.connectivity.ui [150]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+           -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+              org.eclipse.datatools.connectivity.sqm.core [147]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.201.v201902121834"; singleton:="true"
+       org.eclipse.jpt.jpa.db [454]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core; bundle-version="[1.0.0,3.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="[1.0.1,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="1.2.101.201807030125"; singleton:="true"
+              org.eclipse.datatools.enablement.jdt.classpath [177]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+                  -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jpt.jpa.eclipselink.core 4 0 2022-05-19 16:58:53.842
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.eclipselink.core [457]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.201.v201902121834"; singleton:="true"
+       org.eclipse.jpt.jpa.db [454]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core; bundle-version="[1.0.0,3.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="[1.0.1,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="1.2.101.201807030125"; singleton:="true"
+              org.eclipse.datatools.enablement.jdt.classpath [177]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+                  -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.connectivity.ui [150]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+                         -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+                            org.eclipse.datatools.connectivity.sqm.core [147]
+                              Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.core; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.core; bundle-version="3.5.1.v201902121834"; singleton:="true"
+       org.eclipse.jpt.jpa.core [453]
+         Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.201.v201902121834"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jpt.jpa.eclipselink.core.ddlgen 4 0 2022-05-19 16:58:53.853
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.eclipselink.core.ddlgen [458]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.eclipselink.core; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.eclipselink.core; bundle-version="2.4.101.v201902121834"; singleton:="true"
+       org.eclipse.jpt.jpa.eclipselink.core [457]
+         Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.201.v201902121834"; singleton:="true"
+              org.eclipse.jpt.jpa.db [454]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core; bundle-version="[1.0.0,3.0.0)"
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="[1.0.1,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="1.2.101.201807030125"; singleton:="true"
+                     org.eclipse.datatools.enablement.jdt.classpath [177]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+                         -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+                            org.eclipse.datatools.connectivity.ui [150]
+                              Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+                              Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+                                -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+                                   org.eclipse.datatools.connectivity.sqm.core [147]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+         Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.core; bundle-version="[3.0.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jpt.jpa.core; bundle-version="3.5.1.v201902121834"; singleton:="true"
+              org.eclipse.jpt.jpa.core [453]
+                Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db; bundle-version="[2.0.0,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.201.v201902121834"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jpt.jpa.eclipselink.ui 4 0 2022-05-19 16:58:53.870
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.eclipselink.ui [459]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.core; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.core; bundle-version="3.5.1.v201902121834"; singleton:="true"
+       org.eclipse.jpt.jpa.core [453]
+         Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.201.v201902121834"; singleton:="true"
+              org.eclipse.jpt.jpa.db [454]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core; bundle-version="[1.0.0,3.0.0)"
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="[1.0.1,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="1.2.101.201807030125"; singleton:="true"
+                     org.eclipse.datatools.enablement.jdt.classpath [177]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+                         -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+                            org.eclipse.datatools.connectivity.ui [150]
+                              Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+                              Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+                                -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+                                   org.eclipse.datatools.connectivity.sqm.core [147]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.201.v201902121834"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jpt.jpa.gen 4 0 2022-05-19 16:58:53.873
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.gen [460]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.201.v201902121834"; singleton:="true"
+       org.eclipse.jpt.jpa.db [454]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core; bundle-version="[1.0.0,3.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="[1.0.1,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="1.2.101.201807030125"; singleton:="true"
+              org.eclipse.datatools.enablement.jdt.classpath [177]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+                  -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.connectivity.ui [150]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+                         -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+                            org.eclipse.datatools.connectivity.sqm.core [147]
+                              Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.core; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.core; bundle-version="3.5.1.v201902121834"; singleton:="true"
+       org.eclipse.jpt.jpa.core [453]
+         Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.201.v201902121834"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jpt.jpa.ui 4 0 2022-05-19 16:58:53.878
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jpt.jpa.ui [461]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db; bundle-version="[2.0.0,3.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.201.v201902121834"; singleton:="true"
+       org.eclipse.jpt.jpa.db [454]
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core; bundle-version="[1.0.0,3.0.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="[1.0.1,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="1.2.101.201807030125"; singleton:="true"
+              org.eclipse.datatools.enablement.jdt.classpath [177]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+                  -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+                     org.eclipse.datatools.connectivity.ui [150]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+                         -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+                            org.eclipse.datatools.connectivity.sqm.core [147]
+                              Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.core; bundle-version="[3.0.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.core; bundle-version="3.5.1.v201902121834"; singleton:="true"
+       org.eclipse.jpt.jpa.core [453]
+         Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.201.v201902121834"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.m2e.wtp.jpa 4 0 2022-05-19 16:58:54.096
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.wtp.jpa [599]
+  Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.core; bundle-version="3.3.0"
+    -> Bundle-SymbolicName: org.eclipse.jpt.jpa.core; bundle-version="3.5.1.v201902121834"; singleton:="true"
+       org.eclipse.jpt.jpa.core [453]
+         Unresolved requirement: Require-Bundle: org.eclipse.jpt.jpa.db; bundle-version="[2.0.0,3.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jpt.jpa.db; bundle-version="2.2.201.v201902121834"; singleton:="true"
+              org.eclipse.jpt.jpa.db [454]
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.sqltools.editor.core; bundle-version="[1.0.0,3.0.0)"
+                Unresolved requirement: Require-Bundle: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="[1.0.1,3.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.datatools.enablement.jdt.classpath; bundle-version="1.2.101.201807030125"; singleton:="true"
+                     org.eclipse.datatools.enablement.jdt.classpath [177]
+                       Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.ui
+                         -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.ui; bundle-version="1.4.101.201811012051"; singleton:="true"
+                            org.eclipse.datatools.connectivity.ui [150]
+                              Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+                              Unresolved requirement: Require-Bundle: org.eclipse.datatools.connectivity.sqm.core
+                                -> Bundle-SymbolicName: org.eclipse.datatools.connectivity.sqm.core; bundle-version="1.4.101.201811012051"; singleton:="true"
+                                   org.eclipse.datatools.connectivity.sqm.core [147]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.datatools.modelbase.sql
+
+	at org.eclipse.osgi.container.Module.start(Module.java:462)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$2$1.execute(EquinoxContainerAdaptor.java:150)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1837)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1778)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1742)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1664)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jface 2 0 2022-05-20 13:37:36.493
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-20 13:37:36.493
+!MESSAGE A conflict occurred for ALT+CTRL+SHIFT+T:
+Binding(ALT+CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.view.ui.command.launchToolbar,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@672f69f7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.tcf.te.ui.terminals.command.launchToolbar,Open Terminal,
+		,
+		Category(org.eclipse.tcf.te.ui.terminals.commands.category,Terminals Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6aaf1ce8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-20 13:37:36.493
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6f26e775,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tcf.te.ui.terminals.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tcf.te.ui.terminals.commands.category,Terminals Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3220833f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-20 13:39:55.109
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Admin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
